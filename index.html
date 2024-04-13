@@ -13,7 +13,7 @@
 <body class="bg-dark">
     <div class="container bg-white">
         <div class="card">
-            <div class="bg-light border">
+            <div class=" mx-2 bg-light border">
                 <h1>Payment form example</h1>
             </div>
             <div class="card-body">
@@ -25,36 +25,36 @@
                     <div class="row">
                         <div class="col-12 col-md-5 mb-3">
                             <label class="form-label" for="creditCardNumber">Card #</label>
-                            <input type="text" class="form-control" id="creditCardNumber" aria-describedby="creditCardHelp"
+                            <input type="number" class="form-control" id="creditCardNumber" aria-describedby="creditCardHelp"
                              inputmode="numeric" pattern="[0-9]" autocomplete="cc-number" maxlength="16" placeholder="XXXXXXXXXXXXXXXX" required>
                         </div>
                         <!--Fin del card#-->
                         <div class="col-12 col-md-3 mb-3">
                             <label for="securityNumber" class="form-label">CVC #</label>
-                            <input type="text" class="form-control" id="securityNumber" maxlength="3" pattern="[0-9]"
+                            <input type="number" class="form-control" id="securityNumber" maxlength="3" pattern="[0-9]"
                                 inputmode="numeric" placeholder="000" required>
                                 <!--Fin del security code-->
                         </div>
                         <div class="col-12 col-md-4 mb-3">
                             <label for="amountMoney" class="form-label">Amount $</label>
-                            <input type="text" class="form-control" id="amountMoney" placeholder="Amount" pattern="[0-9]" inputmode="numeric" required>
+                            <input type="number" class="form-control" id="amountMoney" placeholder="Amount" pattern="[0-9]" inputmode="numeric" required>
                         </div>
                         <!--Fin del monto-->
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mx-2">
                         <div class="col-12 col-md-6 mb-3">
-                            <label>First Name</label>
+                            <label for="FirstName">First Name</label>
                             <input type="text" class="form-control" id="FirstName">
                         </div>
                         <div class="col-12 col-md-6">
-                            <label>Second Name</label>
+                            <label for="SecondName">Second Name</label>
                             <input type="text" class="form-control" id="SecondName">
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mx-2">
                         <div class="col-12 col-md-6">
-                            <label>City</label>
+                            <label for="city">City</label>
                             <input type="text" class="form-control" id="city">
                         </div>
                         <div class="col-12 col-md-3">
@@ -67,12 +67,12 @@
                             </select>
                         </div>
                         <div class="col-12 col-md-3">
-                            <label>Postal Code</label>
+                            <label for="postal">Postal Code</label>
                             <input type="tel" class="form-control" id="postal" maxlength="5">
                         </div>
                     </div>
                     <!--fin de postal code-->
-                    <div class="row mb-3 ml-3 justify-content-between">
+                    <div class="row mx-2 justify-content-between">
                         <div class="col-12 col-md-5">
                             <p class="mt-3">We accept:</p>
                             <div class="mb-3 form-radio bg-secondary d-flex rounded">
